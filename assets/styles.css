@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Colors */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --lightgrey: hsl(217, 12%, 63%);
+  --medgray: hsl(216, 12%, 54%);
+  --dkblue: hsl(213, 19%, 18%);
+  --vdkblue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-size: 0.9375rem;
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
