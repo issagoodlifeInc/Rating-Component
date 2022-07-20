@@ -18,7 +18,115 @@ body {
   font-size: 0.9375rem;
   margin: 0;
   font-family: "Overpass", sans-serif;
+  background: var(--vdkblue);
+  color: var(--lightgrey);
 }
+
+h1 {
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+}
+button,
+a {
+  transition: all 0.2s ease-in;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  width: 90%;
+  margin: 20vh auto 20px;
+  max-width: 350px;
+  border-radius: 20px;
+  padding: 30px;
+  background: linear-gradient(135deg, var(--dkblue), var(--vdkblue));
+}
+
+/* <!-- Rating state start --> */
+.rate {
+  /* display: none; */
+}
+.rate .img {
+  display: inline-block;
+  padding: 0.7rem;
+  border-radius: 50%;
+  background: var(--dkblue);
+  /* border: 1px solid var(--dkblue); */
+}
+
+.rate--title {
+  font-size: 1.5rem;
+}
+
+.rate-btns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.btn--rate {
+  padding: 15px;
+  width: 90%;
+  font-size: 700;
+  border-radius: 50%;
+  color: var(--lightgrey);
+  background: var(--dkblue);
+}
+
+.btn--rate:hover {
+  color: var(--white);
+
+  background: var(--orange);
+}
+.selected {
+  background: var(--medgray);
+  color: var(--white);
+}
+
+.btn--submit {
+  margin: 1.5rem 0 0;
+  width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: var(--white);
+  background: var(--orange);
+  border-radius: 25px;
+}
+
+.btn--submit:hover {
+  color: var(--orange);
+  background: var(--white);
+}
+
+/* <!-- Thank you state start --> */
+
+.thanks {
+  display: none;
+  text-align: center;
+}
+
+.thanks--rating {
+  font-weight: 400;
+  font-size: 1rem;
+  width: 70%;
+  margin: 1rem auto;
+  color: var(--orange);
+  padding: 0.5rem 0;
+  border-radius: 20px;
+  background: var(--dkblue);
+}
+
+/* <!-- Thank you ends here --> */
 
 .attribution {
   font-size: 11px;
@@ -26,4 +134,28 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color: var(--orange);
+}
+
+@media (min-width: 900px) {
+  body {
+    font-size: 1rem;
+  }
+  .container {
+    max-width: 450px;
+  }
+  .rate--title {
+    font-size: 1.8rem;
+  }
+  .btn--rate {
+    font-size: 1rem;
+    padding: 18px;
+    width: 75%;
+  }
+  .btn--submit {
+    font-size: 0.9rem;
+  }
 }
