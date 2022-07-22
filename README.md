@@ -12,6 +12,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
+- [Acknowledgment](#acknowledgment)
 
 ## Overview
 
@@ -69,3 +70,9 @@ setTimeout(() => {
 ## Author
 
 - Twitter - [@KimutaiLesley](https://www.twitter.com/KimutaiLesley)
+
+## Acknowledgment
+
+Frontend Mentor help - [Luiza Pereira](https://www.frontendmentor.io/profile/LuizaUszacki)
+
+![](./assets/images/luiza.jpg)

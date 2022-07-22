@@ -9,12 +9,21 @@ let yourRate;
 
 rateBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
+    removeSelected();
     btn.classList.toggle("selected");
     yourRate = btn.innerHTML;
   });
 });
 
+const removeSelected = () => {
+  rateBtns.forEach((btn) => {
+    btn.classList.remove("selected");
+  });
+};
+
 const showThanks = () => {
+  //  rateBtns.map((x) => console.log(x));
+  // console.log(rateBtns);
   if (yourRate != "") {
     ratingSection.style.display = "none";
     thanksSection.style.display = "block";
