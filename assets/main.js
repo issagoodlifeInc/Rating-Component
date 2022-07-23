@@ -22,8 +22,6 @@ const removeSelected = () => {
 };
 
 const showThanks = () => {
-  //  rateBtns.map((x) => console.log(x));
-  // console.log(rateBtns);
   if (yourRate != "") {
     ratingSection.style.display = "none";
     thanksSection.style.display = "block";
@@ -37,3 +35,14 @@ const showThanks = () => {
     yourRate = "";
   }, 6000);
 };
+
+function checkSelected(arr) {
+  let selectIndex = -1;
+  arr.forEach((el, index) => {
+    if (el.classList.contains("selected")) {
+      selectIndex = index;
+    }
+    // console.log(selectIndex);
+    return selectIndex;
+  });
+}
